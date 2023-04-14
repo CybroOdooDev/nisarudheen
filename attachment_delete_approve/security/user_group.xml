@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+<!--    This file created for creating a new user group-->
+    <data>
+        <record model="ir.module.category" id="attachment_delete_approve">
+            <field name="name">Attachment Delete approve</field>
+            <field name="description">User access levels for Delete
+                attachments
+            </field>
+        </record>
+        <record id="approve_access" model="res.groups">
+            <field name="name">Approver</field>
+            <field name="implied_ids" eval="[(4, ref('base.user_admin'))]"/>
+            <field name="users"
+                   eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+        </record>
+    </data>
+</odoo>

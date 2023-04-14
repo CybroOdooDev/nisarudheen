@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+<!--    This view created for  adding a form and tree view for approval attachment documents-->
+    <data>
+        <record id="attachment_approval_view_tree" model="ir.ui.view">
+            <field name="name">attachment.approval.tree</field>
+            <field name="model">attachment.approval</field>
+            <field name="arch" type="xml">
+                <tree create="0" edit="0">
+                    <field name="name"/>
+                    <field name="request_owner"/>
+                    <field name="dates"/>
+                    <field name="reference"/>
+                    <field name="document_id"/>
+                </tree>
+            </field>
+        </record>
+        <record id="attachment_approval_view_form" model="ir.ui.view">
+            <field name="name">attachment.approval.form</field>
+            <field name="model">attachment.approval</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="unlink_record" class="oe_highlight"
+                                string="Approve" type="object"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <group>
+                                <field name="request_owner"/>
+                                <field name="dates"/>
+                                <field name="res_model"/>
+                            </group>
+                            <group>
+                                <field name="reference"/>
+                                <field name="document_id"/>
+                                <field name="res_id"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+    <record id="attachment_approval_action" model="ir.actions.act_window">
+        <field name="name">My Approvals</field>
+        <field name="res_model">attachment.approval</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="attachment_delete_approval_menu"
+              action="attachment_approval_action"
+              name="Attachment Approvals"
+              groups="attachment_delete_approve.approve_access"></menuitem>
+
+
+</odoo>

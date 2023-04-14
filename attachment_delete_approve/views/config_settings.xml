@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!--    This module was inherited for adding a field model and all models-->
+    <record id="res_config_settings_view" model="ir.ui.view">
+        <field name="name">res.config.settings.view</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id"
+               ref="base_setup.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='company_details_settings']"
+                   position="inside">
+                <div class="col-12 col-lg-6 o_setting_box"
+                     id="quotation_followup_mail">
+                    <div class="o_setting_left_pane">
+                        <field name="attachment_delete_model"/>
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label for="attachment_delete_model"
+                               string="Select Attachment delete models"/>
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <span attrs="{'invisible': [('attachment_delete_model','=',False)]}">
+                            Select all models
+                        </span>
+                        <field name="all_models"
+                               attrs="{'invisible': [('attachment_delete_model','=',False)]}"/>
+                        <br/>
+                        <span attrs="{'invisible': ['|',('attachment_delete_model','=',False),('all_models','=',True)]}">
+                            Models
+                        </span>
+                        <field name="model_ids" widget="many2many_tags"
+                               attrs="{'invisible': ['|',('attachment_delete_model','=',False),('all_models','=',True)]}"/>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
