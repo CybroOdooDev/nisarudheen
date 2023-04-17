@@ -21,6 +21,7 @@
 #############################################################################
 
 from odoo import models, api
+from odoo.exceptions import UserError
 
 
 class IrAttachment(models.Model):
@@ -28,23 +29,40 @@ class IrAttachment(models.Model):
     attachment delete approval requests."""
     _inherit = 'ir.attachment'
 
+
     @api.model
-    def models(self,id):
-        print(id)
-        attachment_id = self.env['ir.attachment'].browse(id)
-        print(attachment_id.res_model)
+    def models(self, value):
+        """This function Was used to checking active user allowed to
+        access this models document. """
+        flag = False
+        attachment_id = self.env['ir.attachment'].browse(value)
         model = self.env['ir.config_parameter'].sudo().get_param(
             'attachment_delete_approve.model_ids')
         models = self.env['ir.model'].sudo().browse(eval(model))
+        for rec in models:
+            if attachment_id.res_model == rec.model:
+                flag = True
+        return flag
 
-        print(self.env.context)
-
-    def get_user(self):
+    @api.model
+    def get_user(self,record):
         """This function was created for checking our login user
-        (admin or user)."""
+        (admin or user) and delete request already send or not."""
         is_admin = self.env.user.has_group(
             'attachment_delete_approve.approve_access')
-        return is_admin
+        attachment = self.env['ir.attachment'].browse(record)
+        value = True if self.env["attachment.approval"].search([(
+            'document_id', '=', attachment.id)]) else False
+        return is_admin, value
+
+    def all_models(self):
+        """This function was used to checking user access all models or not"""
+        all_model = self.env['ir.config_parameter'].sudo().get_param(
+            'res.config.settings.all_models')
+        if all_model:
+            return True
+        else:
+            return False
 
     def unlink(self):
         """This function is used if the user has no rights to delete 
@@ -66,8 +84,7 @@ class IrAttachment(models.Model):
                     'document_id': self.id,
                     'res_model': self.res_model,
                     'res_id': self.res_id
-                })
-    
+                        })
             else:
                 model = self.env['ir.config_parameter'].sudo().get_param(
                     'attachment_delete_approve.model_ids')
