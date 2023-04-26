@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates>
+    <t t-name="blog_snippet">
+        <section class="latest">
+            <div class="wrapper">
+                <div class="main_heading">
+                    <p>
+                        AMAZING BLOG POST
+                    </p>
+                    <h3>
+                        Latest Articles
+                    </h3>
+                </div>
+                <div class="container">
+                    <div class="latest_content">
+                        <div class="card-deck">
+                            <t t-foreach="blog_data" t-as="blog">
+                                <div class="card">
+                                    <a t-attf-href="/blog/#{slug(blog.blog_id)}/#{slug([blog.id, blog.name])}">
+                                    <div class="card_image">
+                                        <img class="card-img-top"
+                                             t-attf-src="/website_blog/static/src/img/cover_{{ blog.id }}.jpg"
+                                             alt="Card image cap"/>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                        </h5>
+                                        <p class="card-text">
+                                            <t t-esc="blog.subtitle"/>
+                                        </p>
+                                    </div>
+                                    <div class="type">
+                                        concept
+                                    </div>
+                                    </a>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </t>
+
+</templates>

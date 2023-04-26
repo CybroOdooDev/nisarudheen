@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="menu_service" model="website.menu">
+        <field name="name">Service</field>
+        <field name="url">/service</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">31</field>
+    </record>
+
+    <template id="service_page" name="Team">
+        <t t-call="website.layout">
+            <section class="banner_about">
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="banner_content">
+                            <div class="c_wrapper">
+                                <h1>
+                                    EXPERTISE
+
+                                    <br/>
+                                    SERVICES
+                                </h1>
+
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item">
+                                            <a href="#">Home</a>
+                                        </li>
+                                        <li class="breadcrumb-item active" aria-current="page">
+                                            service
+                                        </li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Banner -->
+
+            <!-- Service  -->
+
+            <section class="service_page">
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="s_content">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="img_wrapper">
+                                        <div class="bg_wrapper"></div>
+
+                                        <img src="theme_levelup/static/src/images/service_page/bruce-mars-8YG31Xn4dSw-unsplash.jpg"
+                                             alt=""/>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="b_right">
+                                        <div class="main_heading text-left">
+                                            <p>FULLY EXPERIENCE DESIGN AGENCY</p>
+                                            <h3>
+                                                We help our clients build value digital web design
+                                                solutions
+                                            </h3>
+
+                                            <div class="b_info">
+                                                Lorem ipsum is simply dummy text of the printing and
+                                                typesetting industry. Lorem ipsum has been the industry’s
+                                                standard dummy text ever since.
+                                            </div>
+                                            <a href="#" class="btn btn-service">About company</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="our_services">
+                        <div class="wrapper">
+                            <div class="main_heading">
+                                <p>UNLIMITED POSSIBILITIES</p>
+                                <h3>Our Services</h3>
+                            </div>
+                            <div class="container">
+                                <div class="latest_content">
+                                    <div class="card-deck">
+                                        <div class="card">
+                                            <div class="card_image">
+                                                <img class="card-img-top"
+                                                     src="theme_levelup/static/src/images/latest/latest1.jpg"
+                                                     alt="Card image cap"/>
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">
+                                                    <a href="#">Build perfect website</a>
+                                                </h5>
+                                                <p class="card-text">
+                                                    Lorem ipsum is simply dummy text the printing and
+                                                    typesetting industry lorem has been the standard text
+                                                    since…
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card_image">
+                                                <img class="card-img-top"
+                                                     src="theme_levelup/static/src/images/latest/latest2.jpg"
+                                                     alt="Card image cap"/>
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">
+                                                    <a href="#">Unique digital experience</a>
+                                                </h5>
+                                                <p class="card-text">
+                                                    Lorem ipsum is simply dummy text the printing and
+                                                    typesetting industry lorem has been the standard text
+                                                    since…
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card_image">
+                                                <img class="card-img-top"
+                                                     src="theme_levelup/static/src/images/latest/latest3.jpg"
+                                                     alt="Card image cap"/>
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">
+                                                    <a href="#">Handcrafted templates</a>
+                                                </h5>
+                                                <p class="card-text">
+                                                    Lorem ipsum is simply dummy text the printing and
+                                                    typesetting industry lorem has been the standard text
+                                                    since…
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="icon_service">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="i_content">
+                                        <div class="icon_wrapper">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                 fill="currentColor" class="bi bi-globe"
+                                                 viewBox="0 0 16 16">
+                                                <path
+                                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="info">
+                                            <h5 class="">Website design</h5>
+                                            <p class="">
+                                                Lorem ipsum is simply dummy text the printing and
+                                                typesetting industry lorem has been the standard text
+                                                since…
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="i_content">
+                                        <div class="icon_wrapper">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                 fill="currentColor"
+                                                 class="bi bi-briefcase" viewBox="0 0 16 16">
+                                                <path
+                                                        d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="info">
+                                            <h5 class="">eCommerce solutions</h5>
+                                            <p class="">
+                                                Lorem ipsum is simply dummy text the printing and
+                                                typesetting industry lorem has been the standard text
+                                                since…
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="i_content">
+                                        <div class="icon_wrapper">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                 fill="currentColor" class="bi bi-gear"
+                                                 viewBox="0 0 16 16">
+                                                <path
+                                                        d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                                                <path
+                                                        d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="info">
+                                            <h5 class="">Web development</h5>
+                                            <p class="">
+                                                Lorem ipsum is simply dummy text the printing and
+                                                typesetting industry lorem has been the standard text
+                                                since…
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="i_content">
+                                        <div class="icon_wrapper">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                 fill="currentColor"
+                                                 class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                <path
+                                                        d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                                <path fill-rule="evenodd"
+                                                      d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="info">
+                                            <h5 class="">Interactive design</h5>
+                                            <p class="">
+                                                Lorem ipsum is simply dummy text the printing and
+                                                typesetting industry lorem has been the standard text
+                                                since…
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="i_content">
+                                        <div class="icon_wrapper">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                 fill="currentColor"
+                                                 class="bi bi-bar-chart-line" viewBox="0 0 16 16">
+                                                <path
+                                                        d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="info">
+                                            <h5 class="">Digital marketing</h5>
+                                            <p class="">
+                                                Lorem ipsum is simply dummy text the printing and
+                                                typesetting industry lorem has been the standard text
+                                                since…
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="i_content">
+                                        <div class="icon_wrapper">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                 fill="currentColor" class="bi bi-upc"
+                                                 viewBox="0 0 16 16">
+                                                <path
+                                                        d="M3 4.5a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-7zm3 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7z"/>
+                                            </svg>
+                                        </div>
+
+                                        <div class="info">
+                                            <h5 class="">Branding identity</h5>
+                                            <p class="">
+                                                Lorem ipsum is simply dummy text the printing and
+                                                typesetting industry lorem has been the standard text
+                                                since…
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="pricing">
+                        <div class="wrapper">
+                            <div class="container">
+                                <div class="main_heading">
+                                    <p>SIMPLE PRICING PLAN</p>
+                                    <h3>Amazing Package</h3>
+                                </div>
+
+                                <div class="p_content">
+                                    <div class="card-deck">
+                                        <div class="card cd">
+                                            <div class="p_card">
+                                                <h6>Basic plan</h6>
+                                                <div class="price">$29</div>
+                                                <p class="month">Monthly billing</p>
+                                                <ul>
+                                                    <li>Marketing Strategy</li>
+                                                    <li>Competitive work analysis</li>
+                                                    <li>Social media share audit</li>
+                                                </ul>
+
+                                                <a href="#" class="btn btn-price">Get started</a>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="p_card">
+                                                <h6>Basic plan</h6>
+                                                <div class="price">$29</div>
+                                                <p class="month">Monthly billing</p>
+                                                <ul>
+                                                    <li>Marketing Strategy</li>
+                                                    <li>Competitive work analysis</li>
+                                                    <li>Social media share audit</li>
+                                                </ul>
+
+                                                <a href="#" class="btn btn-price_m">Get started</a>
+                                            </div>
+                                        </div>
+                                        <div class="card cd">
+                                            <div class="p_card">
+                                                <h6>Basic plan</h6>
+                                                <div class="price">$29</div>
+                                                <p class="month">Monthly billing</p>
+                                                <ul>
+                                                    <li>Marketing Strategy</li>
+                                                    <li>Competitive work analysis</li>
+                                                    <li>Social media share audit</li>
+                                                </ul>
+
+                                                <a href="#" class="btn btn-price">Get started</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="experience">
+                        <div class="wrapper">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="left">
+
+                                            <div class="img_wrapper">
+                                                <img
+                                                        src="theme_levelup/static/src/images/service_page/photo-successful-handsome-business-man-with-his-team-working-office.jpg"
+                                                        alt=""/>
+                                                <img src="theme_levelup/static/src/images/service_page/portrait-handsome-smiling-serious-indian-man.jpg"
+                                                     alt=""/>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="right">
+                                            <div class="main_heading text-left">
+                                                <p>FULLY EXPERIENCE DESIGN AGENCY</p>
+                                                <h3>Get creative dedicated
+                                                    <br/>
+                                                    branding services from
+                                                </h3>
+                                            </div>
+
+                                            <div class="accordion" id="accordionExample">
+                                                <div class="card">
+                                                    <div class="card-header" id="headingOne">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link btn-block text-left"
+                                                                    type="button" data-toggle="collapse"
+                                                                    data-target="#collapseOne" aria-expanded="true"
+                                                                    aria-controls="collapseOne">
+                                                                What do you mean by item and end product?
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+
+                                                    <div id="collapseOne" class="collapse " aria-labelledby="headingOne"
+                                                         data-parent="#accordionExample">
+                                                        <div class="card-body">
+                                                            Lorem ipsum is simply dummy text of the printing and
+                                                            typesetting industry of type and
+                                                            scrambled it to make a type book.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingTwo">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link btn-block text-left collapsed"
+                                                                    type="button"
+                                                                    data-toggle="collapse" data-target="#collapseTwo"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="collapseTwo">
+                                                                Am i allowed to modify the item that i purchased?
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                                         data-parent="#accordionExample">
+                                                        <div class="card-body">
+                                                            Lorem ipsum is simply dummy text of the printing and
+                                                            typesetting industry of type and
+                                                            scrambled it to make a type book.
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingThree">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link btn-block text-left collapsed"
+                                                                    type="button"
+                                                                    data-toggle="collapse" data-target="#collapseThree"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="collapseThree">
+                                                                What are some examples of permitted end products?
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div id="collapseThree" class="collapse"
+                                                         aria-labelledby="headingThree"
+                                                         data-parent="#accordionExample">
+                                                        <div class="card-body">
+                                                            Lorem ipsum is simply dummy text of the printing and
+                                                            typesetting industry of type and
+                                                            scrambled it to make a type book.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="testimonial">
+                        <div class="wrapper">
+                            <div class="main_heading">
+                                <p>
+                                    LOVED BY OUR CUSTOMERS
+                                </p>
+                                <h3>
+                                    Clients Testimonial
+                                </h3>
+                            </div>
+                            <div class="container">
+                                <div class="owl-carousel owl-theme2">
+                                    <div class="item">
+                                        <div class="c_t">
+                                            <div class="wrapper2">
+                                                <div class="comment">
+                                                    Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod
+                                                    tempor incididunt
+                                                    ut labore et dolore magna ut enim ad
+                                                </div>
+                                                <div class="p_info">
+                                                    <div class="img_wrapper">
+                                                        <img src="theme_levelup/static/src/images/testimoinial/c_t1.jpg"
+                                                             alt=""/>
+                                                    </div>
+                                                    <div class="detail">
+                                                        <h6>Luke Jhon</h6>
+                                                        <p>
+                                                            Creative director
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="c_t">
+                                            <div class="wrapper2">
+                                                <div class="comment">
+                                                    Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod
+                                                    tempor incididunt
+                                                    ut labore et dolore magna ut enim ad
+                                                </div>
+                                                <div class="p_info">
+                                                    <div class="img_wrapper">
+                                                        <img src="theme_levelup/static/src/images/testimoinial/c_t2.jpg"
+                                                             alt=""/>
+                                                    </div>
+                                                    <div class="detail">
+                                                        <h6>Luke Jhon</h6>
+                                                        <p>
+                                                            Creative director
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="c_t">
+                                            <div class="wrapper2">
+                                                <div class="comment">
+                                                    Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod
+                                                    tempor incididunt
+                                                    ut labore et dolore magna ut enim ad
+                                                </div>
+                                                <div class="p_info">
+                                                    <div class="img_wrapper">
+                                                        <img src="theme_levelup/static/src/images/testimoinial/c_t3.jpg"
+                                                             alt=""/>
+                                                    </div>
+                                                    <div class="detail">
+                                                        <h6>Luke Jhon</h6>
+                                                        <p>
+                                                            Creative director
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="partners">
+                        <div class="wrapper">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="p_img">
+                                            <img src="theme_levelup/static/src/images/branding/branding1.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="p_img">
+                                            <img src="theme_levelup/static/src/images/branding/branding2.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="p_img">
+                                            <img src="theme_levelup/static/src/images/branding/branding3.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="p_img">
+                                            <img src="theme_levelup/static/src/images/branding/branding4.jpg" alt=""/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+        </t>
+    </template>
+</odoo>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="menu_team" model="website.menu">
+        <field name="name">Team</field>
+        <field name="url">/team</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">31</field>
+    </record>
+
+    <template id="team_page" name="Team">
+        <t t-call="website.layout">
+            <section class="banner_about banner_team">
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="banner_content">
+                            <div class="c_wrapper">
+                                <h1>
+                                    CREATIVE
+                                    <br/>
+                                    PEOPLE
+                                </h1>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item">
+                                            <a href="#">Home</a>
+                                        </li>
+                                        <li class="breadcrumb-item active" aria-current="page">
+                                            service
+                                        </li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Banner -->
+
+
+            <!-- Portfolio tab section starts here -->
+            <section class="page_team">
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="c_wrapper">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="c_img">
+                                        <img src="theme_levelup/static/src/images/creative/craetive (1).jpg" alt=""/>
+                                        <div class="info">
+                                            <div class="i_wrapper">
+                                                <div class="ss">
+                                                    <h5>
+                                                        Stepheny Martin
+                                                    </h5>
+                                                    <p>
+                                                        Development head
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="c_img">
+                                        <img src="theme_levelup/static/src/images/creative/craetive (2).jpg" alt=""/>
+                                        <div class="info">
+                                            <div class="i_wrapper">
+                                                <div class="ss">
+                                                    <h5>
+                                                        Jhon Luther
+                                                    </h5>
+                                                    <p>
+                                                        Project manager
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="c_img">
+                                        <img src="theme_levelup/static/src/images/creative/craetive (3).jpg" alt=""/>
+                                        <div class="info">
+                                            <div class="i_wrapper">
+                                                <div class="ss">
+                                                    <h5>
+                                                        Steve Jobs
+                                                    </h5>
+                                                    <p>
+                                                        Financial Manager
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="c_img">
+                                        <img src="theme_levelup/static/src/images/creative/craetive (1).jpg" alt=""/>
+                                        <div class="info">
+                                            <div class="i_wrapper">
+                                                <div class="ss">
+                                                    <h5>
+                                                        Stepheny Martin
+                                                    </h5>
+                                                    <p>
+                                                        Development head
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="c_img">
+                                        <img src="theme_levelup/static/src/images/creative/craetive (2).jpg" alt=""/>
+                                        <div class="info">
+                                            <div class="i_wrapper">
+                                                <div class="ss">
+                                                    <h5>
+                                                        Jhon Luther
+                                                    </h5>
+                                                    <p>
+                                                        Project manager
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="c_img">
+                                        <img src="theme_levelup/static/src/images/creative/craetive (3).jpg" alt=""/>
+                                        <div class="info">
+                                            <div class="i_wrapper">
+                                                <div class="ss">
+                                                    <h5>
+                                                        Steve Jobs
+                                                    </h5>
+                                                    <p>
+                                                        Financial Manager
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="join_team">
+                        <div class="wrapper">
+
+                            <div class="join_us">
+                                <p>
+                                    AWESOMENESS AND CREATIVE PEOPLE
+                                </p>
+                                <h3>
+                                    We talk a lot about hope
+                                    <br/>
+                                    helping and teamwork
+                                </h3>
+                                <a href="#" class="btn btn-join">Join the team</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="words">
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="team_photo">
+                                        <img src="theme_levelup/static/src/images/team/business-people-office.jpg" alt=""/>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="team_photo">
+                                        <img src="theme_levelup/static/src/images/team/business-team-working-office-discussing-job-issues.jpg"
+                                             alt=""/>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="words_main">
+                                        <div class="heading">
+                                            <p class="p_color">WORDS OF TEAM MEMBER</p>
+                                            <h5>
+                                                Teamwork is the ability work together toward
+                                            </h5>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum is simply dummy text of
+                                            the printing and typeing industry.
+                                            lorem ipsum has been the industry's
+                                            standard dummy text ever since.
+                                        </p>
+
+                                        <div class="person">
+                                            <div class="p_img">
+                                                <img src="theme_levelup/static/src/images/team/c_t2.jpg" alt=""/>
+                                            </div>
+                                            <div class="info">
+                                                <h6>
+                                                    Mike Bradford
+                                                </h6>
+                                                <p>
+                                                    Creative Director
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="creative_join">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <div class="cj">
+                                            <span>
+                                                Creative thinkers,
+                                            </span>
+                                            clever developer and
+                                            <br/>
+                                            superheroes apply for work with us.
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <a href="#" class="btn btn-service">join the team</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </t>
+    </template>
+</odoo>
