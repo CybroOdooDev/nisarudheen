@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <data>
+<!--        footer-->
         <template id="theme_mars_footer" inherit_id="website.footer_custom"
                   name="Levelup Footer">
             <xpath expr="//div[@id='footer']" position="replace">

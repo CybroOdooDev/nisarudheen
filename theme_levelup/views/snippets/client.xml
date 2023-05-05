@@ -4,6 +4,7 @@
         <section class="awards p_top p_bottom">
             <div class="wrapper">
                 <div class="container">
+<!--                    client snippet-->
                     <div class="row p_top">
                         <div class="col-lg-3 col-md-3 col-12">
                             <h5 class="u_sub_heading_dark">
@@ -23,37 +24,37 @@
                                 <div class="row">
                                     <div class="col-lg-4 col-md-6 col-sm-6 col-6">
                                         <div class="img_wrapper">
-                                            <img src="/theme_levelup/static/src/images/about_page/client (1).png"
+                                            <img src="/theme_levelup/static/src/images/about_home/client (1).png"
                                                  alt=""/>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-6 col-6">
                                         <div class="img_wrapper">
-                                            <img src="/theme_levelup/static/src/images/about_page/client (2).png"
+                                            <img src="/theme_levelup/static/src/images/about_home/client (2).png"
                                                  alt=""/>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-6 col-6">
                                         <div class="img_wrapper">
-                                            <img src="/theme_levelup/static/src/images/about_page/client (3).png"
+                                            <img src="/theme_levelup/static/src/images/about_home/client (3).png"
                                                  alt=""/>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-6 col-6 mt-4">
                                         <div class="img_wrapper">
-                                            <img src="/theme_levelup/static/src/images/about_page/client (4).png"
+                                            <img src="/theme_levelup/static/src/images/about_home/client (4).png"
                                                  alt=""/>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-6 col-6 mt-4">
                                         <div class="img_wrapper">
-                                            <img src="/theme_levelup/static/src/images/about_page/client (5).png"
+                                            <img src="/theme_levelup/static/src/images/about_home/client (5).png"
                                                  alt=""/>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-sm-6 col-6 mt-4">
                                         <div class="img_wrapper">
-                                            <img src="/theme_levelup/static/src/images/about_page/client (6).png"
+                                            <img src="/theme_levelup/static/src/images/about_home/client (6).png"
                                                  alt=""/>
                                         </div>
                                     </div>

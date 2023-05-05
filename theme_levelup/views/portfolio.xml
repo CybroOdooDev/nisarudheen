@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+    <!--    portfolio menu-->
     <record id="menu_portfolio" model="website.menu">
         <field name="name">Portfolio</field>
         <field name="url">/portfolio</field>
@@ -24,7 +25,8 @@
                                         <li class="breadcrumb-item">
                                             <a href="#">Home</a>
                                         </li>
-                                        <li class="breadcrumb-item active" aria-current="page">
+                                        <li class="breadcrumb-item active"
+                                            aria-current="page">
                                             service
                                         </li>
                                     </ol>
@@ -34,213 +36,277 @@
                     </div>
                 </div>
             </section>
+            <!-- Banner -->
+            <!-- Portfolio tab section starts here -->
             <section class="portfolio_grid">
                 <div class="wrapper">
-                <div class="container">
-                    <div class="portfolio_grid_wrapper">
-                        <div class="tab_portfolio">
-                            <div class="container">
-                                <div class="row text-center">
-                                    <div class="col-md-12">
-                                        <div class="col">
-                                            <div class=" vossen-portfolio-filters" data-toggle="buttons">
-                                                <label class="btn btn-filter active">
-                                                    <input type="radio" name="shuffle-filter" value="all" id="shuffle-filter"
-                                                           checked="checked"/>All
-                                                </label>
-                                                <label class="btn btn-filter">
-                                                    <input type="radio" name="shuffle-filter" value="branding" id="shuffle-filter"/>Branding
-                                                </label>
-                                                <label class="btn btn-filter">
-                                                    <input type="radio" name="shuffle-filter" value="photography"/>
-                                                    Photography
-                                                </label>
-                                                <label class="btn btn-filter">
-                                                    <input type="radio" name="shuffle-filter" value="marketing"/>
-                                                    Marketing
-                                                </label>
-                                                <label class="btn btn-filter">
-                                                    <input type="radio" name="shuffle-filter" value="media"/>media
-                                                </label>
-                                                <label class="btn btn-filter">
-                                                    <input type="radio" name="shuffle-filter" value="webdesign"/>Web
-                                                    design
-                                                </label>
+                    <div class="container">
+                        <div class="portfolio_grid_wrapper">
+                            <div class="tab_portfolio">
+                                <div class="container">
+                                    <div class="row text-center">
+                                        <div class="col-md-12">
+                                            <div class="col">
+                                                <div class=" vossen-portfolio-filters"
+                                                     data-toggle="buttons">
+                                                    <label class="btn btn-filter active">
+                                                        <input type="radio"
+                                                               name="shuffle-filter"
+                                                               value="all"
+                                                               checked="checked"/>
+                                                        All
+                                                    </label>
+                                                    <label class="btn btn-filter">
+                                                        <input type="radio"
+                                                               name="shuffle-filter"
+                                                               value="branding"/>
+                                                        Branding
+                                                    </label>
+                                                    <label class="btn btn-filter">
+                                                        <input type="radio"
+                                                               name="shuffle-filter"
+                                                               value="photography"/>
+                                                        Photography
+                                                    </label>
+                                                    <label class="btn btn-filter">
+                                                        <input type="radio"
+                                                               name="shuffle-filter"
+                                                               value="marketing"/>
+                                                        Marketing
+                                                    </label>
+                                                    <label class="btn btn-filter">
+                                                        <input type="radio"
+                                                               name="shuffle-filter"
+                                                               value="media"/>
+                                                        media
+                                                    </label>
+                                                    <label class="btn btn-filter">
+                                                        <input type="radio"
+                                                               name="shuffle-filter"
+                                                               value="webdesign"/>
+                                                        Web design
+                                                    </label>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="my-shuffle row " style="display:flex !important; flex-wrap:wrap !important;">
-                                        <!-- Portfolio Item -->
-                                        <div class="col-lg-4 col-md-6 col-sm-6 image-item p-3" style="float:left !important;"
-                                             data-groups="[&quot;branding&quot;,&quot;marketing&quot;,&quot;media&quot;]">
-                                            <div class="wrapper_3">
-                                                <div class="sliding_product">
-                                                    <div class="wrapper">
-                                                        <div class="img_wrapper">
-                                                            <img src="theme_levelup/static/src/images/portfolio/fil (1).jpg" class="see" alt=""/>
-                                                            <div class="inner">
-                                                                <a href="#" class="quick_view slideInUp">
-                                                                    <span>Illustration</span>
-                                                                </a>
+                                        <div class="my-shuffle ">
+                                            <!-- Portfolio Item -->
+                                            <div class="col-lg-4 col-md-6 col-sm-6 image-item p-3"
+                                                 data-groups="[&quot;branding&quot;,&quot;marketing&quot;,&quot;media&quot;]">
+                                                <div class="wrapper_3">
+                                                    <div class="sliding_product">
+                                                        <div class="wrapper">
+                                                            <div class="img_wrapper">
+                                                                <img src="/theme_levelup/static/src/images/portfolio/fil (1).jpg"
+                                                                     class="see"
+                                                                     alt=""/>
+                                                                <div class="inner">
+                                                                    <a href="#"
+                                                                       class="quick_view slideInUp">
+                                                                        <span>
+                                                                            Illustration
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <!-- Portfolio Item -->
-                                        <div class="col-lg-4 col-md-6 col-sm-6 image-item p-3" style="float:left !important;"
-                                             data-groups="[&quot;branding&quot;]">
-                                            <div class="wrapper_3">
-                                                <div class="sliding_product">
-                                                    <div class="wrapper">
-                                                        <div class="img_wrapper">
-                                                            <img src="theme_levelup/static/src/images/portfolio/fil (2).jpg" class="see" alt=""/>
-                                                            <div class="inner">
-                                                                <a href="#" class="quick_view slideInUp">
-                                                                    <span>Illustration</span>
-                                                                </a>
+                                            <!-- Portfolio Item -->
+                                            <div class="col-lg-4 col-md-6 col-sm-6 image-item p-3"
+                                                 data-groups="[&quot;branding&quot;]">
+                                                <div class="wrapper_3">
+                                                    <div class="sliding_product">
+                                                        <div class="wrapper">
+                                                            <div class="img_wrapper">
+                                                                <img src="/theme_levelup/static/src/images/portfolio/fil (2).jpg"
+                                                                     class="see"
+                                                                     alt=""/>
+                                                                <div class="inner">
+                                                                    <a href="#"
+                                                                       class="quick_view slideInUp">
+                                                                        <span>
+                                                                            Illustration
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <!-- Portfolio Item -->
-                                        <div class="col-lg-4 col-md-6 col-sm-6 image-item p-3"
-                                             data-groups="[&quot;branding&quot;]">
-                                            <div class="wrapper_3">
-                                                <div class="sliding_product">
-                                                    <div class="wrapper">
-                                                        <div class="img_wrapper">
-                                                            <img src="theme_levelup/static/src/images/portfolio/fil (5).jpg" class="see" alt=""/>
-                                                            <div class="inner">
-                                                                <a href="#" class="quick_view slideInUp">
-                                                                    <span>Illustration</span>
-                                                                </a>
+                                            <!-- Portfolio Item -->
+                                            <div class="col-lg-4 col-md-6 col-sm-6 image-item p-3"
+                                                 data-groups="[&quot;branding&quot;]">
+                                                <div class="wrapper_3">
+                                                    <div class="sliding_product">
+                                                        <div class="wrapper">
+                                                            <div class="img_wrapper">
+                                                                <img src="/theme_levelup/static/src/images/portfolio/fil (3).jpg"
+                                                                     class="see"
+                                                                     alt=""/>
+                                                                <div class="inner">
+                                                                    <a href="#"
+                                                                       class="quick_view slideInUp">
+                                                                        <span>
+                                                                            Illustration
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <!-- Portfolio Item -->
-                                        <div class="col-lg-4 col-md-6 col-sm-6 image-item p-3"
-                                             data-groups="[&quot;branding&quot;]">
-                                            <div class="wrapper_3">
-                                                <div class="sliding_product">
-                                                    <div class="wrapper">
-                                                        <div class="img_wrapper">
-                                                            <img src="theme_levelup/static/src/images/portfolio/fil (4).jpg" class="see" alt=""/>
-                                                            <div class="inner">
-                                                                <a href="#" class="quick_view slideInUp">
-                                                                    <span>Illustration</span>
-                                                                </a>
+                                            <!-- Portfolio Item -->
+                                            <div class="col-lg-4 col-md-6 col-sm-6 image-item p-3"
+                                                 data-groups="[&quot;branding&quot;]">
+                                                <div class="wrapper_3">
+                                                    <div class="sliding_product">
+                                                        <div class="wrapper">
+                                                            <div class="img_wrapper">
+                                                                <img src="/theme_levelup/static/src/images/portfolio/fil (4).jpg"
+                                                                     class="see"
+                                                                     alt=""/>
+                                                                <div class="inner">
+                                                                    <a href="#"
+                                                                       class="quick_view slideInUp">
+                                                                        <span>
+                                                                            Illustration
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <!-- Portfolio Item -->
-                                        <div class="col-lg-4 col-md-6 col-sm-6 image-item p-3"
-                                             data-groups="[&quot;marketing&quot;]">
-                                            <div class="wrapper_3">
-                                                <div class="sliding_product">
-                                                    <div class="wrapper">
-                                                        <div class="img_wrapper">
-                                                            <img src="theme_levelup/static/src/images/portfolio/fil (5).jpg" class="see" alt=""/>
-                                                            <div class="inner">
-                                                                <a href="#" class="quick_view slideInUp">
-                                                                    <span>Illustration</span>
-                                                                </a>
+                                            <!-- Portfolio Item -->
+                                            <div class="col-lg-4 col-md-6 col-sm-6 image-item p-3"
+                                                 data-groups="[&quot;marketing&quot;]">
+                                                <div class="wrapper_3">
+                                                    <div class="sliding_product">
+                                                        <div class="wrapper">
+                                                            <div class="img_wrapper">
+                                                                <img src="/theme_levelup/static/src/images/portfolio/fil (5).jpg"
+                                                                     class="see"
+                                                                     alt=""/>
+                                                                <div class="inner">
+                                                                    <a href="#"
+                                                                       class="quick_view slideInUp">
+                                                                        <span>
+                                                                            Illustration
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <!-- Portfolio Item -->
-                                        <div class="col-lg-4 col-md-6 col-sm-6 image-item p-3"
-                                             data-groups="[&quot;branding&quot;,&quot;marketing&quot;]">
-                                            <div class="wrapper_3">
-                                                <div class="sliding_product">
-                                                    <div class="wrapper">
-                                                        <div class="img_wrapper">
-                                                            <img src="theme_levelup/static/src/images/portfolio/fil (1).jpg" class="see" alt=""/>
-                                                            <div class="inner">
-                                                                <a href="#" class="quick_view slideInUp">
-                                                                    <span>Illustration</span>
-                                                                </a>
+                                            <!-- Portfolio Item -->
+                                            <div class="col-lg-4 col-md-6 col-sm-6 image-item p-3"
+                                                 data-groups="[&quot;branding&quot;,&quot;marketing&quot;]">
+                                                <div class="wrapper_3">
+                                                    <div class="sliding_product">
+                                                        <div class="wrapper">
+                                                            <div class="img_wrapper">
+                                                                <img src="/theme_levelup/static/src/images/portfolio/fil (1).jpg"
+                                                                     class="see"
+                                                                     alt=""/>
+                                                                <div class="inner">
+                                                                    <a href="#"
+                                                                       class="quick_view slideInUp">
+                                                                        <span>
+                                                                            Illustration
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <!-- Portfolio Item -->
-                                        <div class="col-lg-4 col-md-6 col-sm-6 image-item p-3"
-                                             data-groups="[&quot;branding&quot;]">
-                                            <div class="wrapper_3">
-                                                <div class="sliding_product">
-                                                    <div class="wrapper">
-                                                        <div class="img_wrapper">
-                                                            <img src="theme_levelup/static/src/images/portfolio/fil (2).jpg" class="see" alt=""/>
-                                                            <div class="inner">
-                                                                <a href="#" class="quick_view slideInUp">
-                                                                    <span>Illustration</span>
-                                                                </a>
+                                            <!-- Portfolio Item -->
+                                            <div class="col-lg-4 col-md-6 col-sm-6 image-item p-3"
+                                                 data-groups="[&quot;branding&quot;]">
+                                                <div class="wrapper_3">
+                                                    <div class="sliding_product">
+                                                        <div class="wrapper">
+                                                            <div class="img_wrapper">
+                                                                <img src="/theme_levelup/static/src/images/portfolio/fil (2).jpg"
+                                                                     class="see"
+                                                                     alt=""/>
+                                                                <div class="inner">
+                                                                    <a href="#"
+                                                                       class="quick_view slideInUp">
+                                                                        <span>
+                                                                            Illustration
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <!-- Portfolio Item -->
-                                        <div class="col-lg-4 col-md-6 col-sm-6 image-item p-3"
-                                             data-groups="[&quot;branding&quot;]">
-                                            <div class="wrapper_3">
-                                                <div class="sliding_product">
-                                                    <div class="wrapper">
-                                                        <div class="img_wrapper">
-                                                            <img src="theme_levelup/static/src/images/portfolio/fil (6).jpg" class="see" alt=""/>
-                                                            <div class="inner">
-                                                                <a href="#" class="quick_view slideInUp">
-                                                                    <span>Illustration</span>
-                                                                </a>
+                                            <!-- Portfolio Item -->
+                                            <div class="col-lg-4 col-md-6 col-sm-6 image-item p-3"
+                                                 data-groups="[&quot;branding&quot;]">
+                                                <div class="wrapper_3">
+                                                    <div class="sliding_product">
+                                                        <div class="wrapper">
+                                                            <div class="img_wrapper">
+                                                                <img src="/theme_levelup/static/src/images/portfolio/fil (6).jpg"
+                                                                     class="see"
+                                                                     alt=""/>
+                                                                <div class="inner">
+                                                                    <a href="#"
+                                                                       class="quick_view slideInUp">
+                                                                        <span>
+                                                                            Illustration
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <!-- Portfolio Item -->
-                                        <div class="col-lg-4 col-md-6 col-sm-6 image-item p-3"
-                                             data-groups="[&quot;branding&quot;]">
-                                            <div class="wrapper_3">
-                                                <div class="sliding_product">
-                                                    <div class="wrapper">
-                                                        <div class="img_wrapper">
-                                                            <img src="theme_levelup/static/src/images/portfolio/fil (3).jpg" class="see" alt=""/>
-                                                            <div class="inner">
-                                                                <a href="#" class="quick_view slideInUp">
-                                                                    <span>Illustration</span>
-                                                                </a>
+                                            <!-- Portfolio Item -->
+                                            <div class="col-lg-4 col-md-6 col-sm-6 image-item p-3"
+                                                 data-groups="[&quot;branding&quot;]">
+                                                <div class="wrapper_3">
+                                                    <div class="sliding_product">
+                                                        <div class="wrapper">
+                                                            <div class="img_wrapper">
+                                                                <img src="/theme_levelup/static/src/images/portfolio/fil (3).jpg"
+                                                                     class="see"
+                                                                     alt=""/>
+                                                                <div class="inner">
+                                                                    <a href="#"
+                                                                       class="quick_view slideInUp">
+                                                                        <span>
+                                                                            Illustration
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="col-lg-4 col-md-6 col-sm-6 my-sizer-element"> </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-6 my-sizer-element"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                </div>
             </section>
+            <!-- Portfolio tab section ends here -->
         </t>
     </template>
 </odoo>

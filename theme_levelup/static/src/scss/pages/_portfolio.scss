@@ -48,10 +48,13 @@
                                 }
                             }
                             .quick_view {
+                                // position: absolute;
                                 color: white;
                                 font-size: 22px;
                                 text-align: center;
                                 padding: 8px 23px;
+                                // top: 51%;
+                                // left: 24%;
                                 display: none;
                                 text-decoration: none;
                                 font-weight: 600 !important;
@@ -85,6 +88,12 @@
                     position: absolute;
                     clip: rect(0, 0, 0, 0);
                     pointer-events: none;
+                }
+                .port_grid {
+                    // display: grid;
+                    // grid-template-columns: 1fr 1fr 1fr;
+                    // @media screen and(max-width:992px) {
+                    // }
                 }
              
                 .masnory_grid_three>div {

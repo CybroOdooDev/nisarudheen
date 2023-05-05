@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
+<!--    snippet inherit for adding  new snippets-->
     <template id="coffee_banner_snippet" inherit_id="website.snippets" name="Coffee banner">
         <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]" position="inside">
             <t t-snippet="theme_levelup.awards" t-thumbnail=""/>
@@ -12,8 +13,6 @@
             <t t-snippet="theme_levelup.index_about" t-thumbnail=""/>
             <t t-snippet="theme_levelup.gallery" t-thumbnail=""/>
             <t t-snippet="theme_levelup.latest_blog" t-thumbnail=""/>
-
-
         </xpath>
     </template>
 

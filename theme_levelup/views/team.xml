@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+    <!--    team menu-->
     <record id="menu_team" model="website.menu">
         <field name="name">Team</field>
         <field name="url">/team</field>
         <field name="parent_id" ref="website.main_menu"/>
         <field name="sequence" type="int">31</field>
     </record>
-
     <template id="team_page" name="Team">
         <t t-call="website.layout">
             <section class="banner_about banner_team">
@@ -14,7 +14,7 @@
                     <div class="container">
                         <div class="banner_content">
                             <div class="c_wrapper">
-                                <h1>
+                                <h1 class="background">
                                     CREATIVE
                                     <br/>
                                     PEOPLE
@@ -24,9 +24,6 @@
                                         <li class="breadcrumb-item">
                                             <a href="#">Home</a>
                                         </li>
-                                        <li class="breadcrumb-item active" aria-current="page">
-                                            service
-                                        </li>
                                     </ol>
                                 </nav>
                             </div>
@@ -35,17 +32,16 @@
                 </div>
             </section>
             <!-- Banner -->
-
-
             <!-- Portfolio tab section starts here -->
             <section class="page_team">
                 <div class="wrapper">
                     <div class="container">
                         <div class="c_wrapper">
                             <div class="row">
-                                <div class="col-4">
+                                <div class="col-lg-4 col-md-6 col-12">
                                     <div class="c_img">
-                                        <img src="theme_levelup/static/src/images/creative/craetive (1).jpg" alt=""/>
+                                        <img src="/theme_levelup/static/src/images/creative/craetive (1).jpg"
+                                             alt="" />
                                         <div class="info">
                                             <div class="i_wrapper">
                                                 <div class="ss">
@@ -60,9 +56,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-lg-4 col-md-6 col-12">
                                     <div class="c_img">
-                                        <img src="theme_levelup/static/src/images/creative/craetive (2).jpg" alt=""/>
+                                        <img src="/theme_levelup/static/src/images/creative/craetive (2).jpg"
+                                             alt=""/>
                                         <div class="info">
                                             <div class="i_wrapper">
                                                 <div class="ss">
@@ -78,9 +75,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-lg-4 col-md-6 col-12">
                                     <div class="c_img">
-                                        <img src="theme_levelup/static/src/images/creative/craetive (3).jpg" alt=""/>
+                                        <img src="/theme_levelup/static/src/images/creative/craetive (3).jpg"
+                                             alt=""/>
                                         <div class="info">
                                             <div class="i_wrapper">
                                                 <div class="ss">
@@ -96,9 +94,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-lg-4 col-md-6 col-12">
                                     <div class="c_img">
-                                        <img src="theme_levelup/static/src/images/creative/craetive (1).jpg" alt=""/>
+                                        <img src="/theme_levelup/static/src/images/creative/craetive (1).jpg"
+                                             alt=""/>
                                         <div class="info">
                                             <div class="i_wrapper">
                                                 <div class="ss">
@@ -113,9 +112,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-lg-4 col-md-6 col-12">
                                     <div class="c_img">
-                                        <img src="theme_levelup/static/src/images/creative/craetive (2).jpg" alt=""/>
+                                        <img src="/theme_levelup/static/src/images/creative/craetive (2).jpg"
+                                             alt=""/>
                                         <div class="info">
                                             <div class="i_wrapper">
                                                 <div class="ss">
@@ -130,9 +130,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-lg-4 col-md-6 col-12">
                                     <div class="c_img">
-                                        <img src="theme_levelup/static/src/images/creative/craetive (3).jpg" alt=""/>
+                                        <img src="/theme_levelup/static/src/images/creative/craetive (3).jpg"
+                                             alt=""/>
                                         <div class="info">
                                             <div class="i_wrapper">
                                                 <div class="ss">
@@ -164,7 +165,8 @@
                                     <br/>
                                     helping and teamwork
                                 </h3>
-                                <a href="#" class="btn btn-join">Join the team</a>
+                                <a href="#" class="btn btn-join">Join the team
+                                </a>
                             </div>
                         </div>
 
@@ -174,23 +176,27 @@
 
                         <div class="container">
                             <div class="row">
-                                <div class="col-4">
+                                <div class="col-lg-4 col-md-6 col-12">
                                     <div class="team_photo">
-                                        <img src="theme_levelup/static/src/images/team/business-people-office.jpg" alt=""/>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="team_photo">
-                                        <img src="theme_levelup/static/src/images/team/business-team-working-office-discussing-job-issues.jpg"
+                                        <img src="/theme_levelup/static/src/images/team/business-people-office.jpg"
                                              alt=""/>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="team_photo">
+                                        <img src="/theme_levelup/static/src/images/team/business-team-working-office-discussing-job-issues.jpg"
+                                             alt=""/>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4  col-12">
                                     <div class="words_main">
                                         <div class="heading">
-                                            <p class="p_color">WORDS OF TEAM MEMBER</p>
+                                            <p class="p_color">WORDS OF TEAM
+                                                MEMBER
+                                            </p>
                                             <h5>
-                                                Teamwork is the ability work together toward
+                                                Teamwork is the ability work
+                                                together toward
                                             </h5>
                                         </div>
                                         <p>
@@ -202,7 +208,8 @@
 
                                         <div class="person">
                                             <div class="p_img">
-                                                <img src="theme_levelup/static/src/images/team/c_t2.jpg" alt=""/>
+                                                <img src="/theme_levelup/static/src/images/team/c_t2.jpg"
+                                                     alt=""/>
                                             </div>
                                             <div class="info">
                                                 <h6>
@@ -219,7 +226,7 @@
 
                             <div class="creative_join">
                                 <div class="row">
-                                    <div class="col-9">
+                                    <div class="col-lg-9 col-12">
                                         <div class="cj">
                                             <span>
                                                 Creative thinkers,
@@ -229,8 +236,10 @@
                                             superheroes apply for work with us.
                                         </div>
                                     </div>
-                                    <div class="col-3">
-                                        <a href="#" class="btn btn-service">join the team</a>
+                                    <div class="col-lg-3 col-12">
+                                        <a href="#" class="btn btn-service">join
+                                            the team
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -238,6 +247,7 @@
                     </div>
                 </div>
             </section>
+            <!-- Portfolio tab section ends here -->
         </t>
     </template>
 </odoo>

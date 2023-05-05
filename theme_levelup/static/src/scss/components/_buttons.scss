@@ -13,7 +13,7 @@
         padding: 15px 25px;
         position: relative;
         text-transform: uppercase;
-        background-color:transparent;
+        background-color:transparent !important;
         color: var(--white-color) !important;
         transition: all 0.3s;
       
@@ -75,7 +75,7 @@
         padding: 15px 25px;
         position: relative;
         text-transform: uppercase;
-        background-color:transparent;
+        background-color:transparent ;
         color: var(--level-color-1) !important;
         transition: all 0.3s;
       

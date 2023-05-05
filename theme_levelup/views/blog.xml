@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
+<!--    blog menu-->
     <template id="theme_levelup_blog" inherit_id="website_blog.blog_post_short">
         <xpath expr="//div[@id='o_wblog_blog_top']" position="replace">
             <section class="banner_about banner_portfolio">
@@ -7,7 +8,7 @@
                     <div class="container">
                         <div class="banner_content">
                             <div class="c_wrapper">
-                                <h1>
+                                <h1 class="blog_b_image" >
                                     LATEST
                                     <br/>
                                     BLOG

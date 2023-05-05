@@ -3,7 +3,7 @@
 #
 #    Cybrosys Technologies Pvt. Ltd.
 #
-#    Copyright (C) 2022-TODAY Cybrosys Technologies(<https://www.cybrosys.com>)
+#    Copyright (C) 2023-TODAY Cybrosys Technologies(<https://www.cybrosys.com>)
 #    Author: Cybrosys Techno Solutions(<https://www.cybrosys.com>)
 #
 #    You can modify it under the terms of the GNU LESSER
@@ -21,15 +21,14 @@
 #############################################################################
 
 import logging
-import werkzeug
 
 from odoo import http
 
 
 from odoo.http import request
-from odoo.tools import plaintext2html
 
 _logger = logging.getLogger(__name__)
+
 
 class About(http.Controller):
     @http.route('/about', website=True, type='http', auth='public', csrf=False)

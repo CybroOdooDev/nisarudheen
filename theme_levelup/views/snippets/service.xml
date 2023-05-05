@@ -4,12 +4,13 @@
         <section class="awards p_top p_bottom">
             <div class="wrapper">
                 <div class="container">
+<!--                    service snippet-->
                     <div class="row p_top oe_structure">
                         <div class="col-lg-3 col-md-3 col-12 img_flex">
                             <h5 class="u_sub_heading_dark">
                                 Services
                             </h5>
-                            <img src="/theme_levelup/static/src/images/about_page/Place Your Image Here (Double Click to Edit) 2.png"
+                            <img src="/theme_levelup/static/src/images/about_home/Place Your Image Here (Double Click to Edit) 2.png"
                                  alt=""
                                  style="margin-top: 100px;" width="200px"/>
                         </div>

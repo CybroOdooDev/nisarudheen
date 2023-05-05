@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
+<!--    index snippet-->
     <template id="index_about" name="Index About">
         <section class="index_about p_top">
             <div class="ss_wrapper">
@@ -28,7 +29,7 @@
                                     techniques ’
                                 </p>
                                 <div class="desc_img">
-                                    <img src="/theme_levelup/static/src/images/about_page/image 1.png"
+                                    <img src="/theme_levelup/static/src/images/about_home/image 1.png"
                                          alt=""/>
                                 </div>
                             </div>
@@ -38,7 +39,7 @@
                         <div class="row">
                             <div class="col-lg-3 col-md-6 col-12 brand_flex pb-5 pb-lg-0">
                                 <div class="brand_img">
-                                    <img src="/theme_levelup/static/src/images/about_page/1 1.png"
+                                    <img src="/theme_levelup/static/src/images/about_home/1 1.png"
                                          alt=""/>
                                 </div>
                                 <h5 class="u_sub_heading_dark">
@@ -47,7 +48,7 @@
                             </div>
                             <div class="col-lg-3 col-md-6 col-12 brand_flex  pb-5 pb-lg-0">
                                 <div class="brand_img">
-                                    <img src="/theme_levelup/static/src/images/about_page/2.png" alt=""/>
+                                    <img src="/theme_levelup/static/src/images/about_home/2.png" alt=""/>
                                 </div>
                                 <h5 class="u_sub_heading_dark">
                                     DIgital Branding
@@ -55,7 +56,7 @@
                             </div>
                             <div class="col-lg-3 col-md-6 col-12 brand_flex  pb-5 pb-md-0 pb-lg-0">
                                 <div class="brand_img">
-                                    <img src="/theme_levelup/static/src/images/about_page/3.png" alt=""/>
+                                    <img src="/theme_levelup/static/src/images/about_home/3.png" alt=""/>
                                 </div>
                                 <h5 class="u_sub_heading_dark">
                                     DIgital Branding
@@ -63,7 +64,7 @@
                             </div>
                             <div class="col-lg-3 col-md-6 col-12 brand_flex">
                                 <div class="brand_img">
-                                    <img src="/theme_levelup/static/src/images/about_page/4.png" alt=""/>
+                                    <img src="/theme_levelup/static/src/images/about_home/4.png" alt=""/>
                                 </div>
                                 <h5 class="u_sub_heading_dark">
                                     DIgital Branding
@@ -79,7 +80,7 @@
                                 <div class="col-lg-6 col-md-6 col-12 ">
                                     <div class="card mr-0 mr-lg-3 mr-md-3">
                                         <div class="card_img">
-                                            <img src="/theme_levelup/static/src/images/about_page/image 2.png"
+                                            <img src="/theme_levelup/static/src/images/about_home/image 2.png"
                                                  alt=""/>
                                         </div>
                                         <div class="caption">Information
@@ -94,7 +95,7 @@
                                 <div class="col-lg-6 col-md-6 col-12 custom_margin">
                                     <div class="card ml-0  ml-lg-3 ml-md-3">
                                         <div class="card_img">
-                                            <img src="/theme_levelup/static/src/images/about_page/image 3.png"
+                                            <img src="/theme_levelup/static/src/images/about_home/image 3.png"
                                                  alt=""/>
                                         </div>
                                         <div class="caption">Information
@@ -111,7 +112,7 @@
                                 <div class="col-lg-6 col-md-6 col-12 ">
                                     <div class="card mr-0 mr-lg-3 mr-md-3">
                                         <div class="card_img">
-                                            <img src="/theme_levelup/static/src/images/about_page/image 4.png"
+                                            <img src="/theme_levelup/static/src/images/about_home/image 4.png"
                                                  alt=""/>
                                         </div>
                                         <div class="caption">Information
@@ -126,7 +127,7 @@
                                 <div class="col-lg-6 col-md-6 col-12 custom_margin">
                                     <div class="card  ml-lg-3 ml-md-3">
                                         <div class="card_img">
-                                            <img src="/theme_levelup/static/src/images/about_page/image 5.png"
+                                            <img src="/theme_levelup/static/src/images/about_home/image 5.png"
                                                  alt=""/>
                                         </div>
                                         <div class="caption">Information

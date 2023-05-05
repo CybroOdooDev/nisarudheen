@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
+<!--    header-->
     <template id="theme_levelup_header"
-              inherit_id="website.template_header_default">
-        <xpath expr="//t[@t-call='website.navbar']" position="replace">
+              inherit_id="website.layout">
+        <xpath expr="//header" position="replace">
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700 &amp; display=swap"/>
             <header class="header_modern_light ">
                 <section class="navigation fixed-top sticker">

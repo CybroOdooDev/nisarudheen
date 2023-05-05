@@ -1,27 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <template id="levelup_shop" inherit_id="website.contactus" name="Levelup_Contact">
+        <!--        contact menu-->
+        <template id="levelup_shop" inherit_id="website.contactus"
+                  name="Levelup_Contact">
             <xpath expr="//div[@id='wrap']" position="replace">
-                <section class="banner_about oe_structure">
+                <section class="banner_about">
                     <div class="wrapper">
                         <div class="container">
                             <div class="banner_content">
                                 <div class="c_wrapper">
-                                    <h1>
+                                    <h1 class="bimage">
                                         CONTACT
-
                                         <br/>
                                         BRIEFING
                                     </h1>
-
                                     <nav aria-label="breadcrumb">
                                         <ol class="breadcrumb">
                                             <li class="breadcrumb-item">
                                                 <a href="#">Home</a>
-                                            </li>
-                                            <li class="breadcrumb-item active" aria-current="page">
-                                                service
                                             </li>
                                         </ol>
                                     </nav>
@@ -32,12 +29,14 @@
                 </section>
                 <!-- Banner -->
 
+
+                <!-- Contact section starts here -->
                 <section class="contact">
                     <div class="wrapper">
                         <div class="contact_top">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-3">
+                                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                                         <div class="top_content">
                                             <div class="c_icon">
                                                 <svg
@@ -64,7 +63,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                                         <div class="top_content">
                                             <div class="c_icon">
                                                 <svg
@@ -91,7 +90,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                                         <div class="top_content">
                                             <div class="c_icon">
                                                 <svg
@@ -118,7 +117,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-3">
+                                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                                         <div class="top_content">
                                             <div class="c_icon">
                                                 <svg
@@ -153,160 +152,60 @@
                             <div class="wrapper">
                                 <div class="play">
                                     <a href="#">
-                                        <img src="images/about_page/play (1).svg" alt=""/>
+                                        <img src="/theme_levelup/static/src/images/about_page/play (1).svg"
+                                             alt=""/>
                                     </a>
                                 </div>
                             </div>
                             <div class="container">
-
-                                <div class="asd s_website_form" id="s_website_form_nav">
+                                <div class="asd">
                                     <div class="row">
-                                        <div class="col-sm-12 col-lg-6 col-md-6">
+                                        <div class="col-lg-6">
                                             <div class="contact_form">
                                                 <div class="main_heading text-left">
-                                                    <p>LET'S DISCUSS YOUR PROJECTS NOW</p>
-                                                    <h3>Get in touch with us</h3>
+                                                    <p>LET'S DISCUSS YOUR
+                                                        PROJECTS NOW
+                                                    </p>
+                                                    <h3>Get in touch with us
+                                                    </h3>
                                                 </div>
 
-                                                <form id="contactus_form" action="/website/form/" method="post"
-                                                      enctype="multipart/form-data" class="o_mark_required"
-                                                      data-mark="*"
-                                                      data-model_name="mail.mail" data-success-mode="redirect"
-                                                      data-success-page="/contactus-thank-you" data-pre-fill="true">
-                                                    <div class="s_website_form_rows row s_col_no_bgcolor">
-                                                        <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_custom s_website_form_required"
-                                                             data-type="char" data-name="Field">
-                                                            <div class="form-group row">
-                                                                <label class="col-form-label col-sm-auto s_website_form_label"
-                                                                       style="width: 200px" for="contact1">
-                                                                    <span class="s_website_form_label_content">Your
-                                                                        Name
-                                                                    </span>
-                                                                    <span class="s_website_form_mark">*</span>
-                                                                </label>
-                                                                <div class="col-sm-6">
-                                                                    <input id="contact1" type="text"
-                                                                           class="form-control s_website_form_input"
-                                                                           name="name"
-                                                                           required=""/>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_custom"
-                                                             data-type="char" data-name="Field">
-                                                            <div class="form-group row">
-                                                                <label class="col-form-label col-sm-auto s_website_form_label"
-                                                                       style="width: 200px" for="contact2">
-                                                                    <span class="s_website_form_label_content">Phone
-                                                                        Number
-                                                                    </span>
-                                                                </label>
-                                                                <div class="col-sm-6">
-                                                                    <input id="contact2" type="tel"
-                                                                           class="form-control s_website_form_input"
-                                                                           name="phone" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_custom">
-                                                            <div class="form-group row">
-                                                                <label for="inputEmail3"
-                                                                       class="col-form-label col-sm-auto s_website_form_label"
-                                                                       style="width: 200px">Email address
-                                                                </label>
-                                                                <div class="col-sm-6">
-                                                                    <input type="email" class="form-control"
-                                                                           id="inputEmail3"
-                                                                           />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_custom"
-                                                             data-type="char" data-name="Field">
-                                                            <div class="form-group row">
-                                                                <label class="col-form-label col-sm-auto s_website_form_label"
-                                                                       style="width: 200px" for="contact4">
-                                                                    <span class="s_website_form_label_content">
-                                                                        Company
-                                                                    </span>
-                                                                </label>
-                                                                <div class="col-sm-6">
-                                                                    <input id="contact4" type="text"
-                                                                           class="form-control s_website_form_input"
-                                                                           name="company"
-                                                                           />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_required"
-                                                             data-type="char" data-name="Field">
-                                                            <div class="form-group row">
-                                                                <label for="inputEmail3"
-                                                                       class="col-form-label col-sm-auto s_website_form_label"
-                                                                       style="width: 200px">
-                                                                    <span class="s_website_form_label_content">
-                                                                        Subject
-                                                                    </span>
-                                                                    <span class="s_website_form_mark">*</span>
-                                                                </label>
-                                                                <div class="col-sm-6">
-                                                                    <input id="contact5" type="text"
-                                                                           class="form-control s_website_form_input"
-                                                                           name="subject" required=""/>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_custom s_website_form_required"
-                                                             data-type="text" data-name="Field">
-                                                            <div class="form-group row">
-                                                                <label for="exampleFormControlTextarea1"
-                                                                       class="col-form-label col-sm-auto s_website_form_label"
-                                                                       style="width: 200px">Your Question
-                                                                </label>
-                                                                <div class="col-sm-9">
-                                                                    <textarea class="form-control"
-                                                                              id="exampleFormControlTextarea1"
-                                                                              rows="3"/>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="mb-0 py-2 col-12 s_website_form_submit"
-                                                             data-name="Submit Button"
-                                                             style="display: flex;justify-content: end;">
-                                                            <div style="width: 200px;"
-                                                                 class="s_website_form_label"/>
-                                                            <a href="#" role="button"
-                                                               class="btn btn-cart  btn btn-service btn-lg s_website_form_send">
-                                                                SEND MESSAGE
-                                                            </a>
-                                                            <span id="s_website_form_result"/>
-                                                        </div>
+                                                <form>
+                                                    <div class="form-group" id="contact_form_new">
+                                                        <input
+                                                                type="email"
+                                                                class="form-control"
+                                                                id="exampleInputEmail1"
+                                                                aria-describedby="emailHelp"
+                                                                placeholder="Enter email"
+                                                        />
                                                     </div>
+                                                    <div class="form-group">
+                                                        <input
+                                                                type="number"
+                                                                class="form-control"
+                                                                id="exampleInputPassword1"
+                                                                placeholder="number"
+                                                        />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <textarea
+                                                                class="form-control"
+                                                                id="exampleFormControlTextarea1"
+                                                                rows="3"
+                                                        ></textarea>
+                                                    </div>
+                                                    <a type="submit"
+                                                       class="btn btn-service">
+                                                        Send message
+                                                    </a>
                                                 </form>
                                             </div>
                                         </div>
-
-                                        <div class="col-sm-12 col-lg-6 col-md-6">
+                                        <div class="col-lg-6">
                                             <div class="map_area">
-                                                <section class="s_map pb56 pt56" data-map-type="m"
-                                                         style="min-height: 800px"
-                                                         data-map-zoom="12"
-                                                         t-att-data-map-address="' '.join(filter(None, (user_id.company_id.street, user_id.company_id.city, user_id.company_id.state_id.display_name, user_id.company_id.country_id.display_name)))">
-                                                    <div class="map_container o_not_editable">
-                                                        <div class="css_non_editable_mode_hidden">
-                                                            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none">
-                                                                An address must be specified for a map to be
-                                                                embedded
-                                                            </div>
-                                                        </div>
-                                                        <iframe class="s_map_embedded o_not_editable"
-                                                                src="https://maps.google.com/maps?q=250%20Executive%20Park%20Blvd%2C%20Suite%203400%20San%20Francisco%20California%20(US)%20United%20States&amp;t=m&amp;z=12&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
-                                                                scrolling="no" marginheight="0" marginwidth="0"
-                                                                width="100%" height="100%" frameborder="0"
-                                                                contenteditable="false"/>
-                                                        <div class="s_map_color_filter"/>
-                                                    </div>
-                                                </section>
+                                                <div id="map_div"
+                                                     style="height: 600px"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -320,21 +219,25 @@
                                     <span>Connect with social media</span>
                                     <ul>
                                         <li>
-                                            <a href="/website/social/facebook" >
-                                                <img src="/theme_levelup/static/src/images/Social Media Icons/facebook.png" alt=""/>
+                                            <a href="#">
+                                                <img src="/theme_levelup/static/src/images/Social Media Icons/facebook.png"
+                                                     alt=""
+                                                />
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="/website/social/instagram">
+                                            <a href="#">
                                                 <img src="/theme_levelup/static/src/images/Social Media Icons/instagram.png"
-                                                     alt=""/>
+                                                     alt=""
+                                                />
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
                                                 <img src="/theme_levelup/static/src/images/Social Media Icons/tumblr.png"
-                                                     alt=""/>
+                                                     alt=""
+                                                />
                                             </a>
                                         </li>
                                         <li>
@@ -349,6 +252,7 @@
                         </div>
                     </div>
                 </section>
+                <!-- Contact section ends here -->
 
             </xpath>
         </template>

@@ -1,5 +1,5 @@
 // Fonts
-$font-default:  'Red Hat Display', sans-serif;
+$font-default:  'Poppins', sans-serif;
 
 $font-h1: 36px;
 $font-h2: 18px;
@@ -17,6 +17,11 @@ $easing: cubic-bezier(0.25, 1.7, 0.35, 0.8);
 $duration: 0.5s;
 
 :root {
+	// --primar-gradient-color-one: rgba(95, 85, 157, 1);
+	// --primar-gradient-color-two:  rgba(187, 180, 230, 1);
+	// --primar-gradient-color-three:  #d5d1eb;
+	// --primar-color: #6b62a1;
+	// --secondary-color: #ffffff;
 	--level-brand:#fcb017;
 	--level-color-1: #253237;
 	--level-color-2: #000;
@@ -44,3 +49,17 @@ $duration: 0.5s;
 }
 
 $form-select-bg: red !important;
+
+// // $form-select-border-width:        $input-border-width;
+// $form-select-border-color:white !important;
+// $form-select-border-radius:       $border-radius;
+// $form-select-box-shadow:          white !important;
+
+// $form-select-focus-border-color: white !important;
+// $form-select-focus-width:      white !important;
+// $form-select-focus-box-shadow:  white !important;
+
+// .o_readonly_modifier{
+// 	height:auto !important;
+// 	padding:15px 15px !important;
+// 	}
