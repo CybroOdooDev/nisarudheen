@@ -57,13 +57,11 @@
     ],
     'assets': {
         'web.assets_frontend': [
-            'https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap',
             'theme_levelup/static/src/css/animate.min.css',
             'theme_levelup/static/src/css/owl.carousel.min.css',
             'theme_levelup/static/src/css/owl.theme.default.min.css',
             'theme_levelup/static/src/css/style.css',
             'theme_levelup/static/src/css/font.css',
-            'theme_levelup/static/src/js/index.js',
             'theme_levelup/static/src/xml/snippet.xml',
             'theme_levelup/static/src/js/blog.js',
             'theme_levelup/static/src/js/options.js',
@@ -71,15 +69,16 @@
             'theme_levelup/static/src/css/bootstrap.css',
             'http://code.jquery.com/jquery-1.11.1.min.js',
             'https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js',
+            'theme_levelup/static/src/js/index.js',
             'theme_levelup/static/src/js/owl.carousel.js',
             'theme_levelup/static/src/js/owl.carousel.min.js',
             'theme_levelup/static/src/js/script.js',
             'theme_levelup/static/src/js/service.js',
-
         ],
     },
     'images': [
-
+            'theme_levelup/static/description/banner.png',
+            'theme_levelup/static/description/theme_screenshot.png',
     ],
     'license': 'LGPL-3',
     'installable': True,

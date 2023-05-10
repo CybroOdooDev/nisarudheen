@@ -382,17 +382,17 @@
                                             <div class="right">
                                                 <div class="progress_wrapp">
                                                     <div class="row">
-                                                        <div class="col-4">
+                                                        <div class="col-lg-4 col-md-4 col-12">
                                                             <div class="chart x-70">
                                                                 <p>70%</p>
                                                             </div>
                                                         </div>
-                                                        <div class="col-4">
+                                                        <div class="col-lg-4 col-md-4 col-12">
                                                             <div class="chart x-85">
                                                                 <p>85%</p>
                                                             </div>
                                                         </div>
-                                                        <div class="col-4">
+                                                        <div class="col-lg-4 col-md-4 col-12">
                                                             <div class="chart x-95 ">
                                                                 <p>95%</p>
                                                             </div>
